@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&display=swap');
+
+:root {
+    --light-color: #fefdff;
+    --dark-color: #001524;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    background-color: #a8dadc;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+h1, #new-game-btn, .team-name {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+}
+
+.scores, .score-btns {
+    font-family: 'Black Ops One', cursive;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#new-game-btn {
+    /*the same style as the score buttons*/
+    width: 200px;
+    height: 3rem;
+    padding: 0 !important; 
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-name {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.scores {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    min-width: 10rem;
+    height: 10rem;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 10rem;
+    line-height: 10rem;
+    border: 2px solid var(--light-color);
+    border-radius: 10px;
+}
+
+.score-btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.score-btns--btn, #new-game-btn {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+}
+
+.score-btns--btn:hover, #new-game-btn:hover {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid var(--light-color);
+    color: var(--dark-color);
+}
+
+.score-btns--btn:active, #new-game-btn:active {
+    box-shadow: inset 1px 1px 2px 3px var(--dark-color);
+}
